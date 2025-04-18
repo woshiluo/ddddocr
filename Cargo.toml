@@ -12,12 +12,7 @@ download-binaries = ["ort/download-binaries"]
 default = ["download-binaries"]
 
 [dependencies]
-# 这个版本删除了 Windows DML 以增加兼容性
-ort = { git = "https://github.com/86maid/ort.git", default-features = false, features = [
-  "ndarray",
-  "half",
-  "copy-dylibs",
-] }
+ort = "=2.0.0-rc.9"
 ndarray = "0.15.6"
 lazy_static = "1.4.0"
 serde = { version = "1.0.158", features = ["derive"] }
